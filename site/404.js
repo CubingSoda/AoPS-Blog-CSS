@@ -31,7 +31,7 @@ async function getJSON(filename) {
       $("#main").append(`
       <div class="project">
         <div class="img-card">
-          <img src="${img}" alt="" />
+          <img src="/site/img/${img}" alt="" />
         </div>
 
         <div class="big-title">${name}</div>
