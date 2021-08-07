@@ -4,7 +4,7 @@ async function getJSON(filename) {
 }
 
 (async () => {
-  const projects = await getJSON("/json/projects.json");
+  const projects = await getJSON("/site/projects.json");
   let notFound = true;
 
   // project pages in projects.json
