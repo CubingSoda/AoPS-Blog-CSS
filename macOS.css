@@ -209,7 +209,7 @@ body {
   position: absolute;
   right: 100px;
   top: 4px;
-  width: 85px;
+  width: 100px;
 }
 
 /* navigation box icons */
@@ -263,10 +263,6 @@ body {
 #shouts-widget .widget-header::before {
   top: 10px;
   left: 8px;
-}
-
-#shouts-widget::-webkit-scrollbar {
-  display: none !important;
 }
 
 .blog-shout-wrapper {
@@ -540,7 +536,8 @@ form#blog_searchform::before {
 }
 
 *::-webkit-scrollbar {
-  display: none;
+  width: 0px !important;
+  height: 0px !important;
 }
 
 /* blog replies, blog comment, edit post, moderate post */
