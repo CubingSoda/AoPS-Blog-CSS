@@ -2,6 +2,8 @@
   "macOS.css": {
     "name": "macOS.css",
     "date": "8/7/21",
-    "img": "macOS.png"
+    "img": "macOS.png",
+    "release-post": "TBA",
+    "source-code": "https://github.com/Blog-CSS/Blog-CSS.github.io/blob/main/macOS.css"
   }
 }

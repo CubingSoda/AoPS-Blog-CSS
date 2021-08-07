@@ -17,8 +17,9 @@ async function getJSON(filename) {
       notFound = false;
       const name = projects[project]["name"];
       const date = projects[project]["date"];
-      const desc = projects[project]["desc"];
       const img = projects[project]["img"];
+      const releasePost = projects[project]["release-post"];
+      const sourceCode = projects[project]["source-code"];
 
       $("head").append(`
         <link rel="stylesheet" href="/site/site.css" />
@@ -42,7 +43,10 @@ async function getJSON(filename) {
   
       <br /><br />
   
-      <div class="project-desc">${desc}</div>
+      <div class="project-desc">
+        Release Post: <a href="${releasePost}">${releasePost}</a>
+        Source Code: <a href="${sourceCode}">${sourceCode}</a>
+      </div>
       `);
 
       document.title = name;
