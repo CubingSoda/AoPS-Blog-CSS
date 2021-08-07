@@ -9,7 +9,6 @@ async function getJSON(filename) {
 
   // project pages in projects.json
   for (const project in projects) {
-    const redirects = await getJSON("/json/redirects.json");
     console.log(`https://${location.hostname}/projects/${project}`);
     if (
       location.href === `https://${location.hostname}/projects/${project}` ||
