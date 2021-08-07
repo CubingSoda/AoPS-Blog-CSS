@@ -44,9 +44,8 @@ async function getJSON(filename) {
       <br /><br />
   
       <div class="project-desc">
-        Release Post: <a href="${releasePost}">${releasePost}</a>
-        <br />
-        Source Code: <a href="${sourceCode}">${sourceCode}</a>
+        <a href="${releasePost}" target="_blank">Release Post</a>
+        <a href="${sourceCode}" target="_blank">Source Code</a>
       </div>
       `);
 
