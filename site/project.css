@@ -1,0 +1,17 @@
+.project {
+  gap: 60px;
+  cursor: auto;
+}
+
+.project-desc {
+  display: block;
+  margin: 0 auto;
+  font-size: 1.3em;
+  width: 50%;
+  text-align: center;
+}
+
+.date {
+  font-style: italic;
+  text-align: center;
+}

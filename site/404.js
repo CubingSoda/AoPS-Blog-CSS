@@ -21,10 +21,10 @@ async function getJSON(filename) {
       const img = projects[project]["img"];
 
       $("head").append(`
-        <link rel="stylesheet" href="/css/1-site.css" />
-        <link rel="stylesheet" href="/css/projects.css" />
-        <link rel="stylesheet" href="/css/project.css" />
-        <script src="/js/1-site.js" defer></script>
+        <link rel="stylesheet" href="/site/site.css" />
+        <link rel="stylesheet" href="/site/projects.css" />
+        <link rel="stylesheet" href="/site/project.css" />
+        <script src="/site/site.js" defer></script>
       `);
 
       $(".main").append(`
