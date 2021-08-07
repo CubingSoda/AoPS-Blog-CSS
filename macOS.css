@@ -253,6 +253,7 @@ body {
   background-color: white;
   padding: 50px 10px 10px 10px;
   top: var(--neg-window-gap);
+  width: 19.5vw;
 }
 
 #shouts-widget .widget-title {
