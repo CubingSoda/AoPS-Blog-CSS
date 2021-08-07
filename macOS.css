@@ -269,6 +269,10 @@ body {
   height: calc(50vh - 20px) !important;
 }
 
+.blog-shout-wrapper .aops-scroll-bar {
+  display: none !important;
+}
+
 #charsleft,
 .blog-num-shouts {
   display: none;
@@ -449,7 +453,7 @@ form#blog_searchform::before {
   position: absolute;
   left: 80%;
   background-color: white;
-  padding: 20px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
   top: var(--neg-window-gap);
 }
 
