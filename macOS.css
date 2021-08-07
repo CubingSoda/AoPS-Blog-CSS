@@ -297,7 +297,8 @@ body {
 
   overflow: auto;
 }
-#side > div:nth-child(4) > div.widget-header > div {
+#side > div:nth-child(4) > div.widget-header > div,
+#side > div:nth-child(5) > div.widget-header > div {
   display: none !important;
 }
 
@@ -421,6 +422,11 @@ form#blog_searchform::before {
   width: 18px;
   height: 17px;
   z-index: 1000000 !important;
+}
+
+/* contrib widget */
+#contrib-widget {
+  display: none !important;
 }
 
 /* about owner widget */
