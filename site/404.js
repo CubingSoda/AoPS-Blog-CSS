@@ -27,7 +27,7 @@ async function getJSON(filename) {
         <script src="/site/site.js" defer></script>
       `);
 
-      $(".main").append(`
+      $("#main").append(`
       <div class="project">
         <div class="img-card">
           <img src="${img}" alt="" />
