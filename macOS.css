@@ -3,12 +3,10 @@
 macOS.css by forester2015, sealsrock
 Feel free to use, but do not delete this header
 
-This CSS is not affiliated with Apple Inc.
-
 **/
 
 :root {
-  --date: "Thu 9:41AM";
+  --date: "Thu 9:41 AM";
 
   /* Utility Properties */
   --window-gap: 50px;
@@ -76,6 +74,11 @@ body {
   top: 61px;
   left: 82%;
   z-index: 1;
+}
+
+#wrapper,
+#archive-widget {
+  border-top: 38px solid white !important;
 }
 
 #shouts-widget::-webkit-scrollbar {
@@ -350,7 +353,7 @@ body {
   position: absolute;
   right: 100px;
   top: 4px;
-  width: 80px;
+  width: 85px;
 }
 
 #blog_keywords::before {
@@ -662,15 +665,4 @@ div#search-widget {
 .blog-moderate-topic:hover::before {
   background-color: #dbdbd7;
   transition: 0.3s background-color ease;
-}
-
-
-#wrapper,
-#archive-widget {
-  border-top: 30px solid white !important;
-}
-
-.blog-shout {
-  background-color: white;
-  border-bottom: 1px solid black;
 }
