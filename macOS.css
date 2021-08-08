@@ -278,10 +278,15 @@ body {
   display: none;
 }
 
+#shout-helper[style="display: block;"] {
+  display: inline-block !important;
+  width: 100%;
+}
+
 #message {
   margin: 0px 2px 2px;
   height: 102px;
-width: 100%;
+  width: 100%;
 }
 
 /* tags */
