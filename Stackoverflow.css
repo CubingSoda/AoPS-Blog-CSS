@@ -1,0 +1,1070 @@
+/**
+
+Stackoverflow.css by forester2015, player01, and AndrewC10
+Feel free to use, but do not delete this header
+
+**/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+@font-face {
+  font-family: "DIN";
+  src: url(https://nhv24.github.io/aops-blog-css/assets/DINRegular.woff),
+    url(https://nhv24.github.io/aops-blog-css/assets/DINRegular.otf),
+    url(https://nhv24.github.io/aops-blog-css/assets/DINRegular.eot);
+}
+
+/*  Body  */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Layout */
+#wrapper {
+  width: 100%;
+  margin-top: 53px;
+  background: white;
+  border: 0 !important;
+}
+
+#content {
+  width: 1268px;
+  padding-left: 168px;
+  margin: auto;
+  border: 1px solid #d6d9dc;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+#header {
+  height: 53px;
+  border-top: 3px solid rgb(244, 128, 36) !important;
+  position: fixed;
+}
+
+#side {
+  width: 280px;
+}
+
+#main {
+  width: calc(100% - 280px);
+  padding: 10px;
+  border-left: 1px solid #d6d9dc;
+  height: 100vh;
+}
+
+/*  Navbar  */
+#navigation_box {
+  left: calc((100vw - 1275px) / 2);
+  top: 74px;
+  z-index: 99;
+  position: fixed;
+}
+
+#navigation_box,
+#navigation_box > div {
+  background-color: transparent;
+  border: 0;
+  width: -moz-fit-content !important;
+  height: -moz-fit-content !important;
+  width: fit-content !important;
+  height: fit-content !important;
+  color: transparent;
+  font-size: 0px;
+}
+
+#navigation_box a {
+  display: inline-block;
+  clear: left;
+  color: rgb(83, 90, 96) !important;
+  float: left;
+  text-align: left;
+  background-color: transparent;
+  overflow: hidden;
+  line-height: 26px;
+  text-overflow: ellipsis;
+  width: 164px;
+  white-space: nowrap;
+  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+    sans-serif;
+  font-size: 13px;
+  padding: 4px 8px 4px 8px;
+}
+
+#navigation_box a:hover {
+  color: #0c0d0e !important;
+}
+
+#left_navigation_box a:last-child {
+  background-color: rgb(239, 240, 241);
+  color: #0c0d0e !important;
+  font-weight: 700;
+  border-right: 3px solid rgb(244, 128, 36);
+}
+
+#right_navigation_box {
+  clear: left;
+  float: left;
+}
+
+/* Post new entry */
+#post-new-entry-p {
+  text-align: right;
+  float: right;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)):nth-of-type(1) {
+  margin-top: 72px;
+}
+
+#post-new-entry {
+  font-size: 0px;
+}
+
+#post-new-entry-img {
+  display: none;
+}
+
+#post-new-entry::before {
+  content: "Ask Question";
+  font-size: 13px;
+  color: white;
+  background-color: #0095ff;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+  padding: 0.8em;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+#post-new-entry-p {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+#post-new-entry:hover::before {
+  background-color: #0077cc;
+}
+
+#post-new-entry:active::before {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+/*  Entries  */
+div .entrywrap {
+  background: none;
+  border: none;
+}
+
+.entry {
+  border: 0 !important;
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  .entrywrap {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  :where(.message, .cmty-post-attachments, .efooter, .cmty-poll-display, .cmty-post-edit-info) {
+  display: none;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  .cmty-tags-itembox-wrapper {
+  margin: 0;
+  height: 28px;
+  bottom: 5px;
+  overflow: hidden;
+}
+
+#main > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5)) > .entry {
+  border-top: 1px solid lightgray !important;
+  border-bottom: none;
+  margin: 0;
+  padding: 5px;
+  display: block;
+  padding-bottom: 5px !important;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h2 {
+  float: right;
+  color: #9199a1;
+  display: block;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h2
+  a {
+  display: inline !important;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h2:before {
+  content: "asked ";
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h2
+  a::before {
+  background: none;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h2 {
+  line-height: normal;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  .username-coloured {
+  color: #0077cc !important;
+}
+
+.entry h2 a img {
+  display: none;
+}
+
+/*  Header  */
+#header {
+  background: none;
+  border: 0;
+  padding-left: 24px;
+  background-color: rgb(250, 250, 251);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 4px 0px, rgba(0, 0, 0, 0.05) 0px 2px 8px 0px;
+  z-index: 20;
+}
+
+div#header h1 {
+  color: black;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: left;
+  text-decoration: none;
+  margin-left: 20px;
+  font-family: "DIN", "Open Sans", sans-serif;
+}
+
+div#header h1::before {
+  content: "";
+  display: inline-block;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Stack_Overflow_icon.svg/768px-Stack_Overflow_icon.svg.png");
+  background-size: auto 40px;
+  height: 40px;
+  position: absolute;
+  width: 40px;
+  left: -40px;
+  top: 3px;
+}
+
+/* Misc */
+#message,
+#message:focus,
+.blog-shout-wrapper,
+.blog-tags-wrapper {
+  border: 1px solid #d6d9dc;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.05),
+    0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+#message-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  flex-direction: column;
+}
+
+#charsleft {
+  display: none;
+}
+
+#message {
+  resize: none;
+  padding: 7px;
+}
+
+.cmty-itembox {
+  overflow: auto;
+}
+
+.cmty-item-tag {
+  margin: 2px;
+  font-size: 12px;
+  color: #39739d !important;
+  background-color: #e1ecf4 !important;
+  padding: 0.4em 0.5em;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  line-height: 1;
+  height: auto;
+}
+
+.cmty-item-tag:hover {
+  color: #2c5777 !important;
+  background-color: #d1e5f1 !important;
+}
+
+#feed-wrapper {
+  display: none;
+}
+
+.post-comment {
+  display: none !important;
+}
+
+/*  Search  */
+#blog_keywords:focus,
+.blog-reply-window .cmty-posting-box-container textarea:focus {
+  box-shadow: 0 0 0 4px hsla(205, 100%, 40%, 0.15);
+  border-color: #6cbbf7;
+}
+
+#search-widget,
+#search-widget > div {
+  display: inline-block;
+  height: 0px;
+}
+
+#blog_keywords + div .button2 {
+  display: none;
+}
+
+#blog_keywords {
+  position: fixed;
+  top: 0;
+  z-index: 22;
+  border-color: #bbc0c4;
+  background-color: #fff;
+  color: #3c4146;
+  padding: 0.6em 0.7em;
+  border-radius: 3px;
+  width: 50%;
+  margin-top: 7px;
+  right: 25%;
+}
+
+#blog_searchform > fieldset,
+#search-widget > div.widget-content {
+  border: none;
+}
+
+#search-widget {
+  box-shadow: none !important;
+}
+
+#search-widget .widget-title,
+#search-widget #widget-header,
+#search-widget > div.widget-header {
+  display: none;
+}
+
+/*  Widgets  */
+.widget-header,
+#user-menu-widget::before {
+  padding: 12px 15px 12px 15px;
+  background-color: #fafafb;
+  color: #535a60;
+  border-radius: 3px 3px 0px 0px;
+  border: 1px solid rgb(228, 230, 232);
+}
+
+.widget-content {
+  padding: 4px 15px 4px 15px;
+  background-color: transparent;
+  color: #535a60;
+  border-radius: 0px 0px 3px 3px;
+  border: 1px solid rgb(228, 230, 232);
+}
+
+#user-menu-widget .description {
+  margin: 0;
+  padding: 8px 0px;
+}
+
+p.avatar {
+  margin: 0;
+}
+
+/* Avatars, description widget */
+#user-menu-widget::before {
+  content: "Description";
+  background-color: rgb(251, 242, 212);
+  width: 100%;
+  display: inline-block;
+  border-color: #f1e5bc;
+}
+
+#user-menu-widget > div {
+  background-color: rgb(253, 247, 227);
+  border: 1px solid #f1e5bc;
+}
+
+#side > div {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 4px 0px, rgba(0, 0, 0, 0.05) 0px 2px 8px 0px;
+  padding: 0 !important;
+  margin-bottom: 2em;
+}
+
+#side > div:not(.widget, .block) {
+  margin-top: 2em;
+}
+
+p.avatar img {
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  top: 7px;
+  right: calc(25vw - 48px);
+  z-index: 21;
+
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#user-menu-widget a.username-colored {
+  color: #0077cc !important;
+}
+
+/*  Entries  */
+.entry h1 {
+  font-size: 27px;
+}
+
+.entry h1 a {
+  color: rgb(60, 65, 70);
+}
+
+.entry h1 {
+  border-bottom: 2px solid rgb(228, 230, 232);
+  padding-bottom: 8px !important;
+}
+
+.cmty-items-input-box .cmty-item-tag .cmty-delete-item {
+  top: 7px;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h1 {
+  font-size: 1.3em;
+  padding: 0 !important;
+  border: 0;
+  margin-bottom: 1.2em;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h1
+  a {
+  color: #0077cc;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h1
+  a:visited {
+  color: #0064bd;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  > .entry
+  h1
+  a:hover {
+  color: #0095ff;
+}
+
+.blog-shout-wrapper {
+  box-shadow: none;
+}
+
+.community textarea,
+.community textarea:focus {
+  border: 0;
+}
+
+.cmty-posting-environ {
+  border: 1px solid #bbc0c4;
+  border-radius: 3px;
+}
+
+.blog-reply-window .cmty-post-preview {
+  border: 0;
+  border-top: 1px solid #bbc0c4;
+}
+
+.cmty-posting-preview-bar {
+  border-top: 1px solid #bbc0c4;
+  color: #bbc0c4;
+  background-color: #eff0f1;
+}
+
+.blog-reply-window .cmty-posting-box-container textarea {
+  padding: 10px;
+  height: 200px;
+}
+
+.cmty-reply-window .cmty-posting-button-row {
+  background-color: transparent;
+  border-bottom: 1px solid #bbc0c4;
+}
+
+.cmty-bbcode-other {
+  color: #333;
+}
+
+/*  Comments  */
+.efooter .actions a.post-replies {
+  display: none;
+}
+
+.blog-post-comment {
+  font-size: 0px !important;
+}
+
+.blog-post-comment::before {
+  font-size: 13px;
+  content: "Post your answer";
+  padding: 10.4px;
+  margin: 5px;
+  background-color: #0095ff;
+  color: white;
+  box-shadow: inset 0px 2px 0 0 rgb(255 255 255 / 40%);
+  border-radius: 3px;
+}
+
+.blog-post-comment:hover::before {
+  background-color: #0077cc;
+}
+
+.blog-post-comment:active::before {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+/* Blockquotes */
+.bbcode_quote,
+.bbcode_quote_head,
+.bbcode_quote::before,
+.bbcode_quote::after {
+  background-color: white !important;
+  border-radius: 0;
+}
+
+.bbcode_quote {
+  border-left: 4px solid rgb(200, 204, 208);
+}
+
+.bbcode_quote::before,
+.bbcode_quote::after {
+  display: none;
+}
+
+/* [TEST] No tag notice by AndrewC10*/
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  .cmty-tags-itembox-wrapper
+  > div
+  > a:last-of-type
+  + div {
+  display: none;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  .cmty-tags-itembox-wrapper
+  > div
+  > *:first-child:not(a) {
+  font-size: 0px;
+  background-color: white !important;
+  border: 0;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  .cmty-tags-itembox-wrapper
+  > div
+  > *:first-child:not(a)::before {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  content: "(No tags in this post)";
+  font-size: 12px;
+  background-color: white;
+  line-height: 28px;
+  color: black;
+  font-weight: 700;
+}
+
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  .cmty-tags-itembox-wrapper
+  > div
+  > *:first-child:not(a) {
+  pointer-events: none;
+}
+
+/*[TEST] Poll notice thing by AndrewC10*/
+#main
+  > div:not(:first-of-type:nth-last-of-type(3):nth-last-child(5))
+  .cmty-post-poll::before {
+  content: "[POLL]";
+  position: absolute;
+  top: -50px;
+  font-size: 18px;
+  right: 0px;
+}
+
+/*  Pywindow  */
+.pywindow > div > button {
+  font-size: 13px !important;
+  color: white;
+  background-color: #0095ff !important;
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.4);
+  padding: 10.4px !important;
+  border-radius: 3px;
+  height: fit-content !important;
+  height: -moz-fit-content !important;
+  border: 1px solid transparent;
+}
+
+.pywindow .btn-run::after {
+  content: " code snippet";
+}
+
+.pywindow .btn-run:hover {
+  background-color: #0077cc !important;
+}
+
+.pywindow .btn-run:active {
+  background-color: #0064bd !important;
+  box-shadow: none;
+}
+
+.pywindow > div > button:not(.btn-run) {
+  color: #39739d !important;
+  background-color: #e1ecf4 !important;
+  border: 1px solid #7aa7c7 !important;
+}
+
+.pywindow > div > button:not(.btn-run):hover {
+  background-color: #b3d3ea !important;
+  color: #2c5777 !important;
+  text-decoration: none;
+}
+
+.pywindow > div > button:not(.btn-run):active {
+  background-color: #a0c7e4 !important;
+  box-shadow: none;
+  border: 1px solid #5b8db1 !important;
+}
+
+/* [TEST] H2 boxes*/
+.entry h2,
+.comment .author {
+  display: grid;
+  grid-template-columns: 0px 15px auto;
+  color: #6a737c;
+  background-color: #e1ecf4;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 7px;
+  border-radius: 3px;
+  order: 1;
+  font-size: 13px;
+  margin-right: 180px;
+  margin-left: auto;
+}
+
+.entry h2 strong,
+.comment .author strong {
+  order: 1;
+}
+
+.entry h2 a,
+.comment .author a {
+  color: #0077cc !important;
+  font-weight: 400;
+  line-height: 30px;
+  display: inline-block;
+  width: 173px;
+}
+
+.entry h2 strong a::before,
+.comment .author strong a::before {
+  content: "";
+  background-image: url("https://avatar.artofproblemsolving.com/no-avatar");
+  background-size: 32px 32px;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
+}
+
+.comment .actions {
+  float: right;
+}
+
+.comment .modactions {
+  float: left;
+}
+
+div.modactions {
+  float: left;
+  line-height: 64px;
+  position: absolute;
+}
+
+/* Comments */
+.blog-num-comments {
+  font-size: 19px;
+  color: rgb(36, 39, 41);
+  margin-top: 10px;
+}
+
+.blog-reply-window + h1 {
+  margin-top: 20px;
+}
+
+.comment {
+  background-color: transparent;
+  border-bottom: 2px solid #eff0f1 !important;
+  height: fit-content;
+  height: -moz-fit-content;
+}
+
+div.commentwrap {
+  padding-bottom: 5px !important;
+  overflow: hidden;
+}
+
+/* Edit info */
+.cmty-post-edit-info {
+  color: rgb(0, 119, 204);
+  display: block;
+  font-size: 12px;
+  width: 170px;
+  position: absolute;
+  background: #e1ecf4;
+  padding: 7px;
+  border-radius: 3px;
+  min-height: 64px;
+  font-style: normal;
+  line-height: 1.25;
+  overflow: auto;
+}
+
+.entry .cmty-post-edit-info {
+  right: -9px;
+  bottom: -72px;
+}
+
+.comment .cmty-post-edit-info {
+  right: 0px;
+}
+
+.modactions a {
+  color: #6a737c;
+  line-height: 13px;
+  font-size: 13px;
+  text-decoration: none !important;
+  margin: 4px;
+}
+
+.cmty-post-edit-info:empty::before {
+  content: "This post/comment has not been edited yet.";
+}
+
+/* TEST BY PLAYER01 */
+.archive-row:before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' class='va-text-top svg-icon iconPencilSm' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='m11.1 1.71 1.13 1.12c.2.2.2.51 0 .71L11.1 4.7 9.21 2.86l1.17-1.15c.2-.2.51-.2.71 0zM2 10.12l6.37-6.43 1.88 1.88L3.88 12H2v-1.88z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.archive-row a {
+  color: #3c4146;
+}
+
+.archive-row a:hover {
+  color: #535a60;
+}
+
+.month-image {
+  display: none;
+}
+
+#side > #user-menu-widget {
+  margin-bottom: 0;
+}
+
+#side > #user-menu-widget > div {
+  padding-bottom: 10px !important;
+}
+
+#archive-widget .widget-header {
+  border-radius: 0;
+  background-color: rgb(251, 242, 212);
+  border-color: #f1e5bc;
+}
+
+#archive-widget .widget-content {
+  background-color: rgb(253, 247, 227);
+  border-color: #f1e5bc;
+}
+
+/* Contributors */
+#contrib-widget {
+  font-size: 0px;
+}
+
+#contrib-widget a:first-of-type {
+  margin-top: 12px;
+}
+
+#contrib-widget a {
+  display: inline-block;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+#contrib-widget a::before {
+  content: "5731";
+  background: rgb(94, 186, 125);
+  padding: 5px;
+  margin-right: 10px;
+  color: white;
+  border-radius: 2px;
+}
+
+/* The big day has come, mobile optimization day! */
+@media only screen and (max-width: 1268px) {
+  #navigation_box {
+    left: 0px;
+  }
+
+  #side {
+    float: left;
+  }
+
+  #content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  #side::before {
+    content: "";
+    display: inline-block;
+    background-image: url("https://image.flaticon.com/icons/png/512/814/814191.png");
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    text-align: right;
+    float: right;
+    margin-bottom: 5px;
+  }
+
+  #side {
+    position: fixed;
+    right: 40px;
+    top: 3px;
+    z-index: 51;
+    background: white;
+    max-height: 35px;
+    overflow: hidden;
+    transition: width 1s ease, max-height 1s ease;
+    width: 35px;
+  }
+
+  #side:hover {
+    max-height: 4000px;
+    width: 280px;
+    height: 100vh;
+    overflow: auto;
+  }
+
+  #main {
+    width: 100%;
+  }
+
+  .entry {
+    display: grid !important;
+  }
+
+  /* Credit to City.css by NMK for this amazing :focus trick */
+  #blog_keywords + div::before {
+    content: "";
+    display: inline-block;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg");
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 110px;
+    z-index: 51;
+    top: 10px;
+  }
+
+  #blog_keywords {
+    right: 110px;
+    top: 0px;
+    height: 40px;
+    width: 35px;
+    border: 0;
+    background-color: transparent;
+    z-index: 52;
+    transition: width 1s ease, right 1s ease, background 1s ease;
+  }
+
+  #blog_keywords::placeholder {
+    color: transparent;
+  }
+
+  #blog_keywords:focus {
+    width: 95vw;
+    right: 10px;
+    background: whitesmoke;
+    outline: none;
+  }
+
+  #blog_keywords:focus::placeholder {
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #navigation_box::before {
+    content: "Q";
+    font-family: AoPS;
+    display: inline-block;
+    font-size: 30px;
+    color: black;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    line-height: 20px;
+  }
+
+  .entry,
+  .commentwrap {
+    padding-bottom: calc(1em + 50px) !important;
+  }
+
+  #search-widget {
+    display: block;
+  }
+
+  #navigation_box {
+    right: 10px;
+    left: auto;
+    top: 10px;
+    z-index: 50;
+    max-height: 22px !important;
+    overflow: hidden;
+    transition: width 1s ease, max-height 1s ease;
+    width: 30px !important;
+  }
+
+  #navigation_box:hover {
+    max-height: 300px !important;
+    width: 240px !important;
+  }
+
+  #navigation_box > div {
+    background: white;
+    float: right;
+    clear: both;
+  }
+
+  #content {
+    width: 100%;
+    padding: 0;
+  }
+
+  .entry h2,
+  .comment p.author {
+    margin-right: 0;
+  }
+
+  .entry .cmty-post-edit-info {
+    bottom: -130px;
+  }
+
+  .comment .cmty-post-edit-info {
+    top: 138px;
+    right: 6px;
+  }
+
+  p.avatar img {
+    right: 75px;
+  }
+
+  #header h1 {
+    font-size: 0px !important;
+  }
+
+  #blog_keywords + div .button2 {
+    display: none;
+  }
+}
+
+/* Hacky fix for blog info ~ player01 */
+@media (max-width: 480px), (max-height: 480px) {
+  #right_navigation_box a.blog-info {
+    display: inline-block !important;
+  }
+}
+
+/*Shouts scrollbar patch by happycupcake. Modified to fit the tags widget too. */
+:where(.blog-shout-wrapper, .blog-tags-wrapper)
+  .aops-scroll-outer
+  > .aops-scroll-inner {
+  scrollbar-width: none;
+}
+
+:where(.blog-shout-wrapper, .blog-tags-wrapper)
+  .aops-scroll-outer
+  > .aops-scroll-inner::-webkit-scrollbar {
+  width: 0px;
+  /*Yay for nonstandard behavior /s.*/
+}
+/* Yay, 1000 lines of code (Below lol)
+*/
