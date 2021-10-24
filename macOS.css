@@ -23,7 +23,7 @@ Credit to @ihatemath123 for search box of Discord.css
 body {
   overflow: hidden;
   font-weight: normal;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, Helvetica, sans-serif;
   background-image: var(--bg-url);
   height: 100%;
   width: 100%;
