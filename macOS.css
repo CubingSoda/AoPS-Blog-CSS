@@ -23,7 +23,7 @@ Credit to @ihatemath123 for search box of Discord.css
 body {
   overflow: hidden;
   font-weight: normal;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-image: var(--bg-url);
   height: 100%;
   width: 100%;
@@ -101,7 +101,7 @@ body {
   padding: 2px 2px 3px;
   font-size: 10pt;
   display: block;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: Arial;
   height: 22px;
   line-height: 14px;
   position: fixed;
@@ -213,7 +213,8 @@ body {
 }
 
 /* navigation box icons */
-.blog-info {
+.blog-info,
+.blog-login {
   font-size: 0pt !important;
 }
 
@@ -601,6 +602,11 @@ form#blog_searchform::before {
   padding: 10px !important;
   font-size: 16px;
   line-height: 1.25;
+
+  margin-top: 20px !important;
+  word-break: break-word !important;
+  margin-left: 0px !important;
+  text-align: center;
 }
 .blog-shout:first-child {
   margin-top: 10px;
@@ -610,6 +616,7 @@ form#blog_searchform::before {
   color: white;
   margin-right: 21px;
   float: right;
+  margin-bottom: 45px !important;
 }
 .blog-shout.row1 {
   background: #e9e9eb;
@@ -620,12 +627,11 @@ form#blog_searchform::before {
 }
 .blog-shout > p:last-child {
   position: absolute;
-  font-size: 12px !important;
+  font-size: 10px !important;
   color: #727274;
-  transform: translateY(10px);
-  width: 100%;
+  transform: translateY(7px);
+  width: 95%;
   left: 0px;
-  margin-top: 7px;
 }
 .blog-shout > p:last-child a {
   color: #8e8e8e;
@@ -656,8 +662,10 @@ form#blog_searchform::before {
 
 .row1 > p:last-child {
   text-align: left !important;
+  width: 100%;
 }
 
 .row2 > p:last-child {
   text-align: right !important;
+  width: 100%;
 }
