@@ -22,6 +22,8 @@ Credit to @ihatemath123 for search box of Discord.css
 
 body {
   overflow: hidden;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
   font-weight: normal;
   font-family: -apple-system, BlinkMacSystemFont, Arial, Helvetica, sans-serif;
   background-image: var(--bg-url);
