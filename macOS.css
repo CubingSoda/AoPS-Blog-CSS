@@ -23,7 +23,7 @@ Credit to @ihatemath123 for search box of Discord.css
 body {
   overflow: hidden;
   font-weight: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Arial, Helvetica, sans-serif;
   background-image: var(--bg-url);
   height: 100%;
   width: 100%;
@@ -116,6 +116,7 @@ body {
   margin: 0;
   height: 25px !important;
   border: none;
+  background: -o-linear-gradient(45deg, #9c76c3a6, #4582b59c);
   background: linear-gradient(45deg, #9c76c3a6, #4582b59c);
 }
 
@@ -140,6 +141,8 @@ body {
   text-align: left;
   color: white;
   width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0;
   padding: 0;
@@ -151,6 +154,8 @@ body {
   margin-left: 45px;
   vertical-align: middle;
   top: 50%;
+  -webkit-transform: translateY(-35%);
+  -ms-transform: translateY(-35%);
   transform: translateY(-35%);
 }
 
@@ -173,15 +178,23 @@ body {
 }
 
 #left_navigation_box > a:nth-child(1) {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
   order: 2;
 }
 #left_navigation_box > a:nth-child(2) {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
   order: 3;
 }
 #left_navigation_box > a:nth-child(3) {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
   order: 1;
 }
 #left_navigation_box > a:nth-child(4) {
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
   order: 4;
 }
 
@@ -193,6 +206,8 @@ body {
 #right_navigation_box > a {
   font-size: 11pt;
   margin: auto 5px auto 5px;
+  -webkit-transform: translateY(20%);
+  -ms-transform: translateY(20%);
   transform: translateY(20%);
 }
 
@@ -348,6 +363,10 @@ input#blog_keywords.inputbox.search::before {
   background-size: auto 100%;
   background-position: center;
   border-left: 1px solid #e6e6e6;
+  -webkit-transition: background-color 0.3s ease 0.114s,
+    border-right-color 0.3s ease 0.114s;
+  -o-transition: background-color 0.3s ease 0.114s,
+    border-right-color 0.3s ease 0.114s;
   transition: background-color 0.3s ease 0.114s,
     border-right-color 0.3s ease 0.114s;
   width: 2.6rem;
@@ -383,6 +402,10 @@ input#blog_keywords::before {
   background-size: auto 100%;
   background-position: center;
   border-left: 1px solid #e6e6e6;
+  -webkit-transition: background-color 0.3s ease 0.114s,
+    border-right-color 0.3s ease 0.114s;
+  -o-transition: background-color 0.3s ease 0.114s,
+    border-right-color 0.3s ease 0.114s;
   transition: background-color 0.3s ease 0.114s,
     border-right-color 0.3s ease 0.114s;
   width: 5.6rem;
@@ -469,12 +492,24 @@ form#blog_searchform::before {
   padding-left: 16px;
   width: 16px;
   height: 16px;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
 .month-image[alt="+"] {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
   transform: rotate(-360deg);
 }
 
@@ -484,13 +519,23 @@ form#blog_searchform::before {
 }
 
 .archive-row {
+  -webkit-transition: height 0.4s, -webkit-transform 0.4s 0.2s;
+  transition: height 0.4s, -webkit-transform 0.4s 0.2s;
+  -o-transition: transform 0.4s 0.2s, height 0.4s;
   transition: transform 0.4s 0.2s, height 0.4s;
+  transition: transform 0.4s 0.2s, height 0.4s, -webkit-transform 0.4s 0.2s;
   height: 20px;
   padding: 0 0 0 30px;
 }
 
 .archive-month-collapsed .archive-row {
+  -webkit-transition: height 0.2s 0.2s, -webkit-transform 0.4s;
+  transition: height 0.2s 0.2s, -webkit-transform 0.4s;
+  -o-transition: transform 0.4s, height 0.2s 0.2s;
   transition: transform 0.4s, height 0.2s 0.2s;
+  transition: transform 0.4s, height 0.2s 0.2s, -webkit-transform 0.4s;
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
   transform: scaleY(0);
   height: 0;
 }
@@ -515,11 +560,15 @@ form#blog_searchform::before {
   top: -30px;
   right: 20px;
   float: right;
+  -webkit-transition: 0.3s background-color ease;
+  -o-transition: 0.3s background-color ease;
   transition: 0.3s background-color ease;
 }
 
 #post-new-entry:hover::before {
   background-color: #dbdbd7;
+  -webkit-transition: 0.3s background-color ease;
+  -o-transition: 0.3s background-color ease;
   transition: 0.3s background-color ease;
 }
 
@@ -593,6 +642,8 @@ form#blog_searchform::before {
 .blog-edit-post:hover::before,
 .blog-moderate-topic:hover::before {
   background-color: #dbdbd7;
+  -webkit-transition: 0.3s background-color ease;
+  -o-transition: 0.3s background-color ease;
   transition: 0.3s background-color ease;
 }
 .blog-shout {
@@ -629,6 +680,8 @@ form#blog_searchform::before {
   position: absolute;
   font-size: 10px !important;
   color: #727274;
+  -webkit-transform: translateY(7px);
+  -ms-transform: translateY(7px);
   transform: translateY(7px);
   width: 95%;
   left: 0px;
