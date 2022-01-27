@@ -1,5 +1,5 @@
 # Blog CSS
 
-Where I store my AoPS Blog CSS.
+My AoPS Blog CSS.
 
-[https://blog-css.github.io](https://blog-css.github.io)
+[https://github.com/CubingSoda/blog-css](https://github.com/CubingSoda/blog-css)
