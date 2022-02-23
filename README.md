@@ -1,3 +1,3 @@
-My AoPS Blog CSS.
+# AoPS Blog CSS
 
-[https://github.com/CubingSoda/AoPS-Blog-CSS](https://github.com/CubingSoda/AoPS-Blog-CSS)
+Blog CSS I made for the Art of Problem Solving blogs.

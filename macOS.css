@@ -9,15 +9,15 @@ Credit to @ihatemath123 for search box of Discord.css
 **/
 
 :root {
-  --date: "Thu 9:41 AM";
+  --date: "Wed Dec 29";
 
   /* Utility Properties */
   --window-gap: 50px;
   --neg-window-gap: -50px;
 
   /* Links to assets */
-  --bg-url: url(https://cdn.artofproblemsolving.com/images/c/1/f/c1fc88f2484e0cc79c313573b1739da35907f917.jpg);
-  --buttons-url: url(https://cdn.artofproblemsolving.com/images/9/f/2/9f2318d70e512aaee958a6eb3f709117a398e406.png);
+  --bg-url: url(https://cubingsoda.github.io/AoPS-Blog-CSS/assets/macos-wallpaper.jpg);
+  --buttons-url: url(https://cubingsoda.github.io/AoPS-Blog-CSS/assets/close-buttons.png);
 }
 
 body {
@@ -118,21 +118,24 @@ body {
   margin: 0;
   height: 25px !important;
   border: none;
-  background: -o-linear-gradient(45deg, #9c76c3a6, #4582b59c);
-  background: linear-gradient(45deg, #9c76c3a6, #4582b59c);
+  background: linear-gradient(45deg, #edb1e4, #e4a2e5);
+}
+
+#navigation_box a {
+  color: black !important;
 }
 
 #navigation_box::before {
   content: "";
   position: absolute;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/1200px-Apple_logo_white.svg.png);
-  background-size: 13px 15px;
-  height: 20px;
-  width: 15px;
+  background-image: url(https://i.ibb.co/zH9ptb2/apple-black.png);
+  background-size: 14px 18px;
+  height: 19px;
+  width: 20px;
   background-repeat: no-repeat;
   float: left;
-  left: 15px;
-  top: 3px;
+  left: 19px;
+  top: 2px;
 }
 
 /* left navigation box */
@@ -141,7 +144,7 @@ body {
   font-size: 0pt;
   float: left;
   text-align: left;
-  color: white;
+  color: black;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,7 +166,7 @@ body {
 
 #left_navigation_box > a,
 #left_navigation_box::before {
-  font-size: 11pt;
+  font-size: 10pt;
 }
 
 #left_navigation_box > a:nth-child(1) {
@@ -209,6 +212,7 @@ body {
   font-size: 11pt;
   margin: auto 5px auto 5px;
   -webkit-transform: translateY(20%);
+
   -ms-transform: translateY(20%);
   transform: translateY(20%);
 }
@@ -222,7 +226,8 @@ body {
 }
 #right_navigation_box::before {
   content: var(--date);
-  font-size: 11pt;
+  color: black;
+  font-size: 10pt;
   position: absolute;
   right: 100px;
   top: 4px;
